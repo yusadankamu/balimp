@@ -14,6 +14,8 @@ const portfolioItems = [
   { src: "/portfolio4.jpg", title: "Urban Apartment", size: "col-span-2" },
   { src: "/portfolio5.jpg", title: "Beachfront Restaurant" },
   { src: "/portfolio6.jpg", title: "Cultural Center", size: "row-span-2" },
+  { src: "/portfolio7.jpg", title: "Beach Villa", size: "row-span-2" },
+  { src: "/portfolio8.jpg", title: "Smallville House", size: "row-span-2" },
 ];
 
 const Portfolio = () => {
