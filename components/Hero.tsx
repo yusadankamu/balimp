@@ -30,7 +30,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
           >
-            Transform your dreams into stunning realities with Manggala Putra&apos;s
+            Transform your dreams into stunning realities with Manggala Putra
             innovative designs.
           </motion.p>
           <motion.div
