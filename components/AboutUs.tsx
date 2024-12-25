@@ -41,7 +41,7 @@ const AboutUs = () => {
             </h2>
             <p className="text-lg text-stone-600 mb-6">
               We are a passionate architectural firm based in the heart of Bali,
-              Indonesia. With a deep appreciation for the island's rich cultural
+              Indonesia. With a deep appreciation for the island&apos;s rich cultural
               heritage and natural beauty, we create designs that harmoniously
               blend modern aesthetics with traditional elements.
             </p>
