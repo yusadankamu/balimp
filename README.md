@@ -1,4 +1,4 @@
-# Balimp 🎈
+# Manggala Putra (The Architect Biro from Bali) 🎈
 
 A modern, lightweight JavaScript library for smooth balloon-like animations and floating effects.
 
