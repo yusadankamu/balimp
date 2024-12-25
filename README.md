@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Balimp 🎈
 
-## Getting Started
+A modern, lightweight JavaScript library for smooth balloon-like animations and floating effects.
 
-First, run the development server:
+## Features
+
+- 🪽 Lightweight and zero dependencies
+- 🎯 Simple API for creating floating animations
+- 🎨 Customizable animation parameters
+- ⚡ High-performance animations using requestAnimationFrame
+- 📱 Mobile-friendly and responsive
+- 🌈 Easy integration with any JavaScript project
+
+## Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install balimp
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Quick Start
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```javascript
+import { createBalimp } from 'balimp';
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+// Create a floating element
+const element = document.querySelector('.float-me');
+const balimp = createBalimp(element, {
+  amplitude: 20,    // Float height
+  frequency: 2,     // Speed of animation
+  direction: 'y'    // Axis of movement
+});
 
-## Learn More
+// Start animation
+balimp.start();
 
-To learn more about Next.js, take a look at the following resources:
+// Stop animation
+balimp.stop();
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Configuration Options
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| Option | Type | Default | Description |
+|--------|------|---------|-------------|
+| amplitude | number | 15 | Maximum distance to float |
+| frequency | number | 1.5 | Animation speed |
+| direction | string | 'y' | Animation axis ('x', 'y', or 'both') |
+| easing | string | 'ease-in-out' | Animation easing function |
+| random | boolean | false | Enable random movement |
 
-## Deploy on Vercel
+## Examples
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Basic Floating Animation
+```javascript
+const balloon = createBalimp('.balloon', {
+  amplitude: 30,
+  frequency: 1
+});
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Random Movement
+```javascript
+const cloud = createBalimp('.cloud', {
+  amplitude: 20,
+  frequency: 0.8,
+  direction: 'both',
+  random: true
+});
+```
+
+## Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+- Opera (latest)
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Author
+
+Yusuf Dankamu - [@yusadankamu](https://github.com/yusadankamu)
+
+## Acknowledgments
+
+- Inspired by natural floating movements
+- Thanks to all contributors who have helped shape Balimp
+
+---
+
+Made with ❤️ by [yusadankamu](https://github.com/yusadankamu)
